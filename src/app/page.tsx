@@ -1,95 +1,78 @@
-import Image from 'next/image'
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid'
+import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
+import Link from 'next/link';
+
 import styles from './page.module.css'
+
+import { IProductGroup, PRODUCT_GROUPS } from "../helper/data";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      <Container maxWidth="md">
+      <Grid
+        className={styles.grid}
+        container
+        spacing={3}
+        // justify="space-around"
+        alignItems="stretch"
+      >
+        {PRODUCT_GROUPS.map((group: IProductGroup) => (
+          <Grid
+            className={styles.littleGrid}
+            key={group.id}
+            item
+            xs={12}
+            sm={6}
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+            <Link href={"/"} className='noTextDecoration'>
+              {/* <PageCart
+                title={group.persianTitle}
+                subtitle={
+                  group.persianSubtitle !== undefined
+                    ? group.persianSubtitle
+                    : ""
+                }
+                img={group.img}
+              /> */}
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+              <Card className={styles.card}>
+                <CardMedia
+                  className={styles.cover}
+                  image={group.img}
+                  title={group.persianSubtitle}
+                />
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+                <div className={styles.details}>
+                  <CardContent className={styles.content}>
+                    <Typography
+                      className="YekanFont"
+                      component="h5"
+                      variant="h5"
+                    >
+                      {group.persianTitle}
+                    </Typography>
+                    <Typography
+                      className="YekanFont"
+                      variant="subtitle1"
+                      color="textSecondary"
+                    >
+                      {group.persianSubtitle}
+                    </Typography>
+                  </CardContent>
+                </div>
+              </Card>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+            </Link>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+          </Grid>
+        ))}
+      </Grid>
+      </Container>
     </main>
   )
 }
