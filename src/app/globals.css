@@ -14,3 +14,7 @@
 .YekanFont {
   font-family: "Yekan";
 }
+
+.noTextDecoration{
+  text-decoration: none;
+}
