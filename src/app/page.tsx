@@ -29,20 +29,11 @@ export default function Home() {
             xs={12}
             sm={6}
           >
-            <Link href={"/"} className='noTextDecoration'>
-              {/* <PageCart
-                title={group.persianTitle}
-                subtitle={
-                  group.persianSubtitle !== undefined
-                    ? group.persianSubtitle
-                    : ""
-                }
-                img={group.img}
-              /> */}
+            <Link href={group.enable? ("/market/"+group.id) :"/soon"} className='noTextDecoration'>
 
               <Card className={styles.card}>
                 <CardMedia
-                  className={styles.cover}
+                  className={group.enable? styles.cover:styles.disableCover }
                   image={group.img}
                   title={group.persianSubtitle}
                 />

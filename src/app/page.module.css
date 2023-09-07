@@ -48,6 +48,18 @@
   background-size: contain;
 }
 
+.disableCover{
+  width: 30%;
+  background-size: contain;
+  filter: grayscale(0.8);
+}
+
+.disableCover:hover{
+  transition: all ease 1s;
+  filter: none;
+}
+
+
 .controls {
   display: flex;
   align-items: center;
