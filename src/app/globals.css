@@ -11,10 +11,18 @@
   font-style: normal;
 }
 
-.YekanFont {
-  font-family: "Yekan";
+.YekanFont,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Yekan" !important;
 }
 
-.noTextDecoration{
+.noTextDecoration {
   text-decoration: none;
 }
