@@ -149,12 +149,12 @@ export const CUSTOMERS: ICustomer[] = [
 ];
 
 export const GROUPS: IGroup[] = [
-  { title: 'Breads', persianTitle: 'نان تازه', persianSubtitle: 'خرید نان تازه و گرم', img: '/images/group/noon.png', enabled: true },
-  { title: 'Market', persianTitle: 'سوپر مارکت', persianSubtitle: 'انتخاب و خرید مواد غذایی', img: '/images/group/shopping-cart.png', enabled: false },
-  { title: 'FastFoods', persianTitle: 'فست فود', persianSubtitle: 'سفارش غذا از فست فود و کافه', img: '/images/group/fast-food.png', enabled: false },
-  { title: 'Restaurants', persianTitle: 'رستوران', persianSubtitle: 'سفارش غذاهای ایرانی و محلی', img: '/images/group/resturant.png', enabled: false },
-  { title: 'Souvenir', persianTitle: 'سوغات', persianSubtitle: 'صنایع دستی محلی و بومی', img: '/images/group/souvenir.png', enabled: false },
-  { title: 'Discount', persianTitle: 'تخفیفان رامسر', persianSubtitle: 'تخفیف های باورنکردنی از همه چیز', img: '/images/group/discount.png', enabled: false }
+  { id: 1,  title: 'Breads', persianTitle: 'نان تازه', persianSubtitle: 'خرید نان تازه و گرم', img: '/images/group/noon.png', enabled: true },
+  { id: 2,  title: 'Market', persianTitle: 'سوپر مارکت', persianSubtitle: 'انتخاب و خرید مواد غذایی', img: '/images/group/shopping-cart.png', enabled: false },
+  { id: 3,  title: 'FastFoods', persianTitle: 'فست فود', persianSubtitle: 'سفارش غذا از فست فود و کافه', img: '/images/group/fast-food.png', enabled: false },
+  { id: 4,  title: 'Restaurants', persianTitle: 'رستوران', persianSubtitle: 'سفارش غذاهای ایرانی و محلی', img: '/images/group/resturant.png', enabled: false },
+  { id: 5,  title: 'Souvenir', persianTitle: 'سوغات', persianSubtitle: 'صنایع دستی محلی و بومی', img: '/images/group/souvenir.png', enabled: false },
+  { id: 6,  title: 'Discount', persianTitle: 'تخفیفان رامسر', persianSubtitle: 'تخفیف های باورنکردنی از همه چیز', img: '/images/group/discount.png', enabled: false }
 ]
 
 

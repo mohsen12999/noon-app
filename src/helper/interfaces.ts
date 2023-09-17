@@ -6,6 +6,7 @@ export interface ICustomer {
 }
 
 export interface IGroup {
+    id: number;
     title: string;
     persianTitle: string;
     persianSubtitle: string;
