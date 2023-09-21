@@ -30,7 +30,7 @@ export default function Home() {
               xs={12}
               sm={6}
             >
-              <Link href={group.enabled ? ("/" + group.id) : "/soon"} className='noTextDecoration'>
+              <Link href={group.enabled ? ("/" + group.id + "-" + group.persianTitle) : "/soon"} className='noTextDecoration'>
 
                 <Card className={styles.card}>
                   <CardMedia
