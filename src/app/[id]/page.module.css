@@ -1,0 +1,18 @@
+.grid {
+    padding-top: 2em;
+    justify-content: space-around;
+}
+
+.littleGrid {
+    cursor: pointer
+}
+
+.paper {
+    padding: 2em;
+    text-align: center;
+    /*color: theme.palette.text.secondary*/
+}
+
+.link {
+    text-decoration: none;
+}
