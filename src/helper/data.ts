@@ -149,18 +149,18 @@ export const CUSTOMERS: ICustomer[] = [
 ];
 
 export const GROUPS: IGroup[] = [
-  { id: 1,  title: 'Breads', persianTitle: 'نان تازه', persianSubtitle: 'خرید نان تازه و گرم', img: '/images/group/noon.png', enabled: true },
-  { id: 2,  title: 'Market', persianTitle: 'سوپر مارکت', persianSubtitle: 'انتخاب و خرید مواد غذایی', img: '/images/group/shopping-cart.png', enabled: false },
-  { id: 3,  title: 'FastFoods', persianTitle: 'فست فود', persianSubtitle: 'سفارش غذا از فست فود و کافه', img: '/images/group/fast-food.png', enabled: false },
-  { id: 4,  title: 'Restaurants', persianTitle: 'رستوران', persianSubtitle: 'سفارش غذاهای ایرانی و محلی', img: '/images/group/resturant.png', enabled: false },
-  { id: 5,  title: 'Souvenir', persianTitle: 'سوغات', persianSubtitle: 'صنایع دستی محلی و بومی', img: '/images/group/souvenir.png', enabled: false },
-  { id: 6,  title: 'Discount', persianTitle: 'تخفیفان رامسر', persianSubtitle: 'تخفیف های باورنکردنی از همه چیز', img: '/images/group/discount.png', enabled: false }
+  { id: 1, title: 'Breads', persianTitle: 'نان تازه', persianSubtitle: 'خرید نان تازه و گرم', img: '/images/group/noon.png', enabled: true },
+  { id: 2, title: 'Market', persianTitle: 'سوپر مارکت', persianSubtitle: 'انتخاب و خرید مواد غذایی', img: '/images/group/shopping-cart.png', enabled: false },
+  { id: 3, title: 'FastFoods', persianTitle: 'فست فود', persianSubtitle: 'سفارش غذا از فست فود و کافه', img: '/images/group/fast-food.png', enabled: false },
+  { id: 4, title: 'Restaurants', persianTitle: 'رستوران', persianSubtitle: 'سفارش غذاهای ایرانی و محلی', img: '/images/group/resturant.png', enabled: false },
+  { id: 5, title: 'Souvenir', persianTitle: 'سوغات', persianSubtitle: 'صنایع دستی محلی و بومی', img: '/images/group/souvenir.png', enabled: false },
+  { id: 6, title: 'Discount', persianTitle: 'تخفیفان رامسر', persianSubtitle: 'تخفیف های باورنکردنی از همه چیز', img: '/images/group/discount.png', enabled: false }
 ]
 
 
 export const MARKETS: IMarket[] = [
-  { title: 'Ebrahimian', persianTitle: 'نانوایی ابراهیمی', persianSubtitle: null, img: '/images/market/bakery-logo.png', discount: null, freeDeliver: false, enabled: true, groups_id: 1, address: 'رامسر - ابریشم محله' },
-  { title: 'hayat._.hayat', persianTitle: 'نگارخانه حیاط حیات', persianSubtitle: null, img: '/images/market/florist-bakery-cafe.png', discount: null, freeDeliver: true, enabled: true, groups_id: 2, address: 'رامسر - ابریشم محله' }
+  { id:1, title: 'Ebrahimian', persianTitle: 'نانوایی ابراهیمی', persianSubtitle: null, img: '/images/market/bakery-logo.png', discount: null, freeDeliver: false, enabled: true, groups_id: 1, address: 'رامسر - ابریشم محله' },
+  { id:2, title: 'hayat._.hayat', persianTitle: 'نگارخانه حیاط حیات', persianSubtitle: null, img: '/images/market/florist-bakery-cafe.png', discount: null, freeDeliver: true, enabled: true, groups_id: 2, address: 'رامسر - ابریشم محله' }
 ]
 
 export const OPEN_TIMES: IOpenTime[] = [
