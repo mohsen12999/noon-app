@@ -15,6 +15,7 @@ export interface IGroup {
 }
 
 export interface IMarket {
+    id:number;
     title: string;
     persianTitle: string;
     persianSubtitle: string | null;
